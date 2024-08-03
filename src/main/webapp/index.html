@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="3301.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      rel="stylesheet"
+    />
+    <script src="Cicada.js"></script>
+    <title>HuffDuff</title>
+  </head>
+  <body>
+    <div class="w3-content w3-display-container">
+      <img
+        class="mySlides"
+        src="https://i.postimg.cc/Z56JGG4K/tira.jpg"
+        style="width: 100%"
+      />
+      
+      <img class="mySlides" src="https://i.postimg.cc/G2YMsGyC/output.png" style="width: 100%" />
+
+      
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs((slideIndex += n));
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = x.length;
+          }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex - 1].style.display = "block";
+        }
+      </script>
+      <nav>
+        <div class="logo">
+          <div class="navv">
+            <button class="btn"><i class="bx bx-menu"></i></button>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <button class="btn">
+              <i class="bx bx-menu"></i>
+            </button>
+            <button class="btn1">
+              <img class="logob" src="https://i.postimg.cc/MpDTnqQ8/Bennett-University-1.png">
+            </button>
+          </div>
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="title">
+                <div class="bo">
+                  <span class="nav-link"><h5>DETAILS</h5></span>
+                  <form action="input">
+                    <ul class="select">
+                      <li>
+                        <input
+                          class="select_close"
+                          type="radio"
+                          name="awesomeness"
+                          id="awesomeness-close"
+                          value=""
+                        />
+                        <span class="select_label select_label-placeholder"
+                          >Block</span
+                        >
+                      </li>
+
+                      <li class="select_items">
+                        <input
+                          class="select_expand"
+                          type="radio"
+                          name="awesomeness"
+                          id="awesomeness-opener"
+                        />
+                        <label
+                          class="select_closeLabel"
+                          for="awesomeness-close"
+                        ></label>
+
+                        <ul class="select_options">
+                          <li class="select_option">
+                            <input
+                              class="select_input"
+                              type="radio"
+                              name="awesomeness"
+                              id="awesomeness-ridiculous"
+                              value="A"
+                            />
+                            <label
+                              class="select_label"
+                              for="awesomeness-ridiculous"
+                              ><i>A</i></label
+                            >
+                          </li>
+
+                          <li class="select_option">
+                            <input
+                              class="select_input"
+                              type="radio"
+                              name="awesomeness"
+                              id="awesomeness-reasonable"
+                              value="B"
+                            />
+                            <label
+                              class="select_label"
+                              for="awesomeness-reasonable"
+                              ><i>B</i></label
+                            >
+                          </li>
+
+                          <li class="select_option">
+                            <input
+                              class="select_input"
+                              type="radio"
+                              name="awesomeness"
+                              id="awesomeness-lacking"
+                              value="M"
+                            />
+                            <label class="select_label" for="awesomeness-lacking"
+                              ><i>M</i></label
+                            >
+                          </li>
+
+                          <li class="select_option">
+                            <input
+                              class="select_input"
+                              type="radio"
+                              name="awesomeness"
+                              id="awesomeness-awesomeless"
+                              value="N"
+                            />
+                            <label
+                              class="select_label"
+                              for="awesomeness-awesomeless"
+                              ><i>N</i></label
+                            >
+                          </li>
+                        </ul>
+
+                        <label
+                          class="select_expandLabel"
+                          for="awesomeness-opener"
+                        ></label>
+                      </li>
+                    </ul>
+                  
+                </div>
+              </li>
+              <li class="list">
+                <div class="cont_select_center">
+                <div class="select_mate" data-mate-select="active" >
+                <select name="Room_Type" onchange="" onclick="return false;" id="">
+                <option id="room_type" value="" >Room Type </option>
+                <option value="LA">LA</option>
+                <option value="LH" >LH</option>
+                <option value="TR 	">TR</option>
+                <option value="CA">CA</option>
+                <option value="ECE">ECE</option>
+                <option value="Boys Washroom">Boys Washroom</option>
+                <option value="Girls Washroom">Girls Washroom</option>
+                <option value="Mess">Mess</option>
+                <option value="Kathi">Kathi</option>
+                  </select>
+                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#d9d9d9" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                    <path d="M0-.75h24v24H0z" fill="none"/>
+                </svg></span>
+                <div class="cont_list_select_mate">
+                  <ul class="cont_select_int">  </ul>
+                </div>
+                  </div>
+              </li>
+              <li class="texty">
+                <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Eg:- 303B" maxlength="4" name="class_code" id='name'  />
+                <label for="name" class="form__label">Room Code</label>
+              </div></li>
+              <li class="blanks">
+              </li>
+              <li class="blanks"></li>
+              <li class="blanks"></li>
+              <li class="blanks"></li>
+              <li class="bulist">
+                <button class="btn2" type="submit"><i class='bx bx-search' ></i><span class="trial2">Search?</span></button>
+              </li>
+            </form>
+              <li class="blanks"></li>
+
+              <li class="dividor"><img class="dividor_image" src="Images/Group 2.png"></li>
+
+            </ul>
+            <div class="bottom-content">
+              <li class="dividors"><img class="dividor_images" src="Images/Group 2.png"></li>
+              <li class="bulist">
+                <button id='icon' class="btn3"><i class='bx bx-sun' id="sm"></i><span class="trial3" id="sms">Lightmode</span></button>
+              </li>
+              <li class="list"></li>
+              <li class="list">
+                <button class="btn4"onclick="window.open('', '_self', ''); window.close();"><i class='bx bx-log-out-circle bx-rotate-180' ></i><span class="trial4">Exit</span></button>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="overlay">
+      </section>
+      <script>
+        const navBar = document.querySelector("nav"),
+          menuBtns = document.querySelectorAll(".btn"),
+          overlay = document.querySelector(".overlay");
+
+        menuBtns.forEach((menuBtn) => {
+          menuBtn.addEventListener("click", () => {
+            navBar.classList.toggle("open");
+          });
+        });
+
+        overlay.addEventListener("click", () => {
+          navBar.classList.remove("open");
+        });
+
+//Lightmode// 
+        var btn=document.getElementById("icon");
+        var icon=document.getElementById("sm");
+        btn.onclick=function(){
+          document.body.classList.toggle("dark-theme");
+          if(document.body.classList.contains("dark-theme")){
+            document.getElementById("sm").className = 'bx bx-moon';
+            document.getElementById("sms").textContent="Darkmode";
+          }
+          else{
+            document.getElementById("sm").className = 'bx bx-sun';
+            document.getElementById("sms").textContent="Lightmode";
+          }
+          }
+        
+    </script>
+  </body>
+</html>
