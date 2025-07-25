@@ -1,5 +1,4 @@
 # HuffDuff
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/LavaCandy1/HuffDuff)
 
 HuffDuff is a campus navigation system that implements the A* pathfinding algorithm in Java to calculate and display the shortest route to various locations. The project features a web-based user interface for input and visualizes the optimal path on a 2D map of a campus floor, enhancing student navigation and punctuality.
 
